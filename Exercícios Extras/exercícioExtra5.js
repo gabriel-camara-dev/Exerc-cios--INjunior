@@ -12,6 +12,14 @@ booksByCategory.forEach(category => category.books.forEach(book => {
 }))
 console.log(`São ${autores.length} autores`)
 
+//Q3
+let livros_AugustoCury = []
+booksByCategory.forEach(category => category.books.forEach(book => {
+     if (book.author === 'Augusto Cury') {
+          console.log(`${book.title} || Livro do autor Augusto Cury`)
+     }
+}))
+
 const booksByCategory = [
      {
      category: "Riqueza",
