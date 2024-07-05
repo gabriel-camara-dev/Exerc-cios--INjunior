@@ -1,5 +1,5 @@
 //QUESTÃO 5
-function dividirNumerosPor5(A) {
+function dividirNumeros(A) {
      for (let i = 0; i < A.length; i++) {
          if (A[i] % 5 === 0 && A[i] % 3 === 0) {
              console.log(A[i] + ": fizzbuzz");
