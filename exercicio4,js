@@ -9,6 +9,11 @@
    let organizar_por_panteao = gods.sort((a, b) => a.pantheon.localeCompare(b.pantheon));
    console.log(organizar_por_panteao)
 
+   //Q4
+   let lista_nome_classe = []
+   gods.forEach(god => lista_nome_classe.push(`${god.name} (${god.class})`))
+   console.log(lista_nome_classe)
+
    const gods = [
      {
        name: "Achilles",
