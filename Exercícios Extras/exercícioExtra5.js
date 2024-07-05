@@ -20,6 +20,15 @@ booksByCategory.forEach(category => category.books.forEach(book => {
      }
 }))
 
+//Q4
+function mostrarLivrosPorAutor(autor) {
+     booksByCategory.forEach(category => category.books.forEach(book => {
+          if (book.author === autor) {
+               console.log(`${book.title} || Livro do autor ${autor}`)
+          }
+     }))
+}
+
 const booksByCategory = [
      {
      category: "Riqueza",
