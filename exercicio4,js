@@ -1,6 +1,10 @@
    //Q1
    gods.forEach(god => console.log(`${god.name} ${god.features.length}`))
 
+   //Q2
+   let gods_role_mid = gods.filter(god => god.roles.includes('Mid'))
+   console.log(gods_role_mid)
+
    const gods = [
      {
        name: "Achilles",
