@@ -3,6 +3,15 @@
 console.log(booksByCategory.length + " categorias:")
 booksByCategory.forEach(category => console.log(`${category.category}: ${category.books.length} livros`))
 
+//Q2
+let autores = []
+booksByCategory.forEach(category => category.books.forEach(book => {
+     if (autores.includes(book.author) === false) {
+          autores.push(book.author)
+     }
+}))
+console.log(`São ${autores.length} autores`)
+
 const booksByCategory = [
      {
      category: "Riqueza",
