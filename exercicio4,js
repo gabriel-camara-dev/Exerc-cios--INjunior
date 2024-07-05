@@ -5,6 +5,10 @@
    let gods_role_mid = gods.filter(god => god.roles.includes('Mid'))
    console.log(gods_role_mid)
 
+   //Q3
+   let organizar_por_panteao = gods.sort((a, b) => a.pantheon.localeCompare(b.pantheon));
+   console.log(organizar_por_panteao)
+
    const gods = [
      {
        name: "Achilles",
